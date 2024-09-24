@@ -1,0 +1,116 @@
+@font-face {
+    font-family: 'Bebas';
+    src: url("../assets/fonts/Bebas_Neue/BebasNeue-Regular.ttf"), format('truetype');
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url("../assets/fonts/Oswald/Oswald-VariableFont_wght.ttf"), format('truetype');
+}
+
+@keyframes translation {
+    0%{
+        transform: translateY(0) rotate(-30deg);
+    }
+
+    50%{
+        transform: translateY(-10px) rotate(-30deg);
+    }
+
+    100%{
+        transform: translateY(0) rotate(-30deg);
+    }
+}
+
+nav{
+    background-color: rgb(13, 1, 36);
+    height: 100px;
+    margin-top: -20px;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    margin-left: -40px;
+    list-style: none;
+}
+
+li{
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: invert(1);
+    transition: 1s;
+}
+
+li:hover{
+    width: 60px;
+    height: 60px;
+    transition: 1s;
+}
+
+#img1{
+    background-image: url('../assets/images/global/homesection.png');
+}
+
+#img2{
+    background-image: url('../assets/images/global/lessonsection.png');
+}
+
+#img3{
+    background-image: url('../assets/images/global/videossection.png');
+}
+
+#img4{
+    background-image: url('../assets/images/global/acercadesection.png');
+}
+
+section{
+    height: 800px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../assets/images/global/background.jpg');
+    display: grid;
+    align-items: center;
+}
+
+article{
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.logo{
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+    margin-left: 40px;
+    filter: grayscale(30%) hue-rotate(180deg); /* Cambia el color */
+    background-color: rgb(106, 56, 5);
+    background-image: url('../assets/images/home/logo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: translation 2s infinite;
+    box-shadow: 2px 2px 40px red;
+}
+
+h1{
+    font-family: 'Bebas';
+    font-size: 60px;
+    font-weight: 50;
+    color: white;
+    margin-top: 10px;
+}
+
+p{
+    font-family: 'Oswald';
+    font-size: 15.6px;
+    font-weight: 50;
+    color: white;
+    margin-top: -70px;
+}
+
