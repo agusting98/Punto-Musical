@@ -1,6 +1,12 @@
 nav{
-    position: fixed;
-    width: 96%;
+    position: fixed; /* Mantiene el nav fijo en la parte inferior */
+    bottom: 0; /* Coloca el nav en la parte inferior */
+    left: 0;
+    width: 100%;
+    background-color: rgb(13, 1, 36);
+    color: white;
+    padding: 10px;
+    z-index: 1000; /* Mantiene el nav sobre otros elementos */
 }
 
 nav ul{

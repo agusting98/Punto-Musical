@@ -22,17 +22,22 @@
     }
 }
 
-nav{
+nav{  
+    position: fixed; /* Mantiene el nav fijo en la parte inferior */
+    bottom: 0; /* Coloca el nav en la parte inferior */
+    left: 0;
+    width: 100%;
     background-color: rgb(13, 1, 36);
-    height: 100px;
-    margin-top: -20px;
+    color: white;
+    padding: 10px;
+    z-index: 1000; /* Mantiene el nav sobre otros elementos */
 }
 
 ul{
     display: flex;
     justify-content: center;
-    padding-top: 20px;
-    margin-left: -40px;
+    padding-top: 10px;
+    margin-left: -80px;
     list-style: none;
 }
 

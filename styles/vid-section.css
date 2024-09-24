@@ -42,6 +42,8 @@ p{
     list-style: none;
     display: flex;
     flex-wrap: wrap;
+    width: 300px;
+    margin-right: -46px;
 }
 
 .avid{
